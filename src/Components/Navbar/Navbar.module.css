@@ -1,0 +1,33 @@
+.navContainer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    background-color: #f3f3f3;
+}
+
+.profileImg{
+    display: flex;
+    gap: 15px;
+    align-items: center;  
+    text-decoration: none;  
+}
+.profileImg h1{
+    font-size: 23px;
+    text-decoration: none;
+    color:black ;
+}
+.links{
+    display:flex;
+    gap: 20px;
+    
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.link:hover{
+    color: #926402;
+}

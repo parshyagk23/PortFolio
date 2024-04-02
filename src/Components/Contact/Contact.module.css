@@ -1,0 +1,11 @@
+.footerContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerLine{
+    width:90%;
+    margin: 0 auto;
+    height:1px;
+    background-color:gray
+}
