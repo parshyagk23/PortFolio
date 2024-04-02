@@ -3,7 +3,7 @@ import styles from './Contact.module.css'
 import linkedin from '../../assets/images/Social icons/linkedin.png'
 import github from '../../assets/images/Social icons/github.png'
 
-const Contact = () => {
+const Contact = ({positions}) => {
   const Socialicons = [
     {
       image:  <a target='_blank' href='https://www.linkedin.com/in/prashant-gatkawar-1b7237189/' ><img style={{ height: "30px" }} title="LinkedIn" src={linkedin} /> </a>,
@@ -15,7 +15,7 @@ const Contact = () => {
     
   ];
   return (
-    <footer style={{ position:'absolute' , bottom:'0', width:'100%' }} >
+    <footer style={{ position:positions , bottom:'0', width:'100%' }} >
       <div className={styles.footerLine} ></div>
       <section className={styles.footerContainer} >
         <div>

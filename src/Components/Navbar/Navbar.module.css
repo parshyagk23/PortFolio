@@ -1,10 +1,14 @@
 .navContainer{
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    gap: 680px;
     align-items: center;
     padding: 0px 70px;
     background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
 }
 
 .profileImg{
