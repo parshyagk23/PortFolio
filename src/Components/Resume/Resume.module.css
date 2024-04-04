@@ -1,0 +1,68 @@
+.resumediv {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.RusumeContainer {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: "Work Sans", sans-serif;
+
+}
+
+.resumesection {
+    display: flex;
+    margin: 30px 0;
+
+}
+
+.resumetitle {
+    width: 45vw;
+}
+
+.resumetitle h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(0, 0, 0);
+    margin: 0 0 20px 0;
+}
+
+.line {
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: gray
+}
+
+.resumepoints {
+    width: 55vw;
+    display: flex;
+    gap: 10px;
+}
+
+.resumepoints p {
+    width: 25vw;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+    margin: 0;
+}
+
+.resumepoints h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: gray;
+    margin: 0;
+}
+
+.resumepoints ul {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.resumepoints ul li {
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}

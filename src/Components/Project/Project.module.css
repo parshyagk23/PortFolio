@@ -1,53 +1,61 @@
-
-.projectdiv{
-    width:90vw;
-    margin:0 auto;
-    margin-top:150px 
-}
-.projectcontainer{
+.projectdiv {
     width: 90vw;
-    margin:0 auto ;
-    font-family: "Work Sans", sans-serif;
+    margin: 0 auto;
+    margin-top: 150px
 }
 
-.project h1{
+.projectcontainer {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.project h1 {
     font-size: 35px;
     font-weight: 600;
     color: rgba(0, 0, 0);
     margin: 0 0 20px 0;
 }
-.project{
+
+.project {
     display: flex;
     gap: 50px;
 }
-.description p{
+
+.description p {
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
     color: gray;
-    margin: 0 0 20px 0 ;
+    margin: 0 0 20px 0;
 }
-.projectimg{
+
+.projectimg {
     width: 48vw;
     height: 50vh;
 }
-.projectimg img{
+
+.projectimg img {
     width: 50vw;
     height: 50vh;
 }
 
-@media all and (max-width:1024px){
-    
-    .project{
+@media all and (max-width:1024px) {
+
+    .project {
         flex-direction: column;
+        gap: 20px;
     }
-    .projectimg{
+
+    .projectimg {
         width: 87vw;
         height: 42vh;
     }
-    .projectimg img{
+
+    .projectimg img {
         width: 87vw;
         height: 42vh;
     }
-   
+
 }
