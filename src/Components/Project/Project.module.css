@@ -1,7 +1,12 @@
 
+.projectdiv{
+    width:90vw;
+    margin:0 auto;
+    margin-top:150px 
+}
 .projectcontainer{
-    width: 93vw;
-    margin: 30px 0 30px 0;
+    width: 90vw;
+    margin:0 auto ;
     font-family: "Work Sans", sans-serif;
 }
 
@@ -23,10 +28,26 @@
     margin: 0 0 20px 0 ;
 }
 .projectimg{
-    width: 50vw;
+    width: 48vw;
     height: 50vh;
 }
 .projectimg img{
     width: 50vw;
     height: 50vh;
+}
+
+@media all and (max-width:1024px){
+    
+    .project{
+        flex-direction: column;
+    }
+    .projectimg{
+        width: 87vw;
+        height: 42vh;
+    }
+    .projectimg img{
+        width: 87vw;
+        height: 42vh;
+    }
+   
 }

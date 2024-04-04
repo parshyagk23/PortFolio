@@ -5,6 +5,7 @@ import jobfinderImg from "../../assets/images/Project images/jobfinder.png";
 import pocketNoteImg from "../../assets/images/Project images/pocketNotes.png";
 import supperAppImg from "../../assets/images/Project images/supperapp.png";
 import Contact from "../../Components/Contact/Contact";
+import styles from '../../Components/Project/Project.module.css'
 const ProjectPage = () => {
   const projectDetails = [
     {
@@ -33,10 +34,9 @@ const ProjectPage = () => {
    
     <Navbar />
    
-      <div style={{
-            width:'93vw',
-            margin:'0 auto',
-            marginTop: "150px "
+      <div className={styles.projectdiv}
+      style={{
+            
     }} >
      
 
@@ -52,7 +52,7 @@ const ProjectPage = () => {
 
       ))}
       </div>
-      <Contact  />
+      <Contact com ={'project'} />
       
      
     </>

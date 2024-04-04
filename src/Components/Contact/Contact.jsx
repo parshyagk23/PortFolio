@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Contact.module.css'
 import linkedin from '../../assets/images/Social icons/linkedin.png'
 import github from '../../assets/images/Social icons/github.png'
 
-const Contact = () => {
+const Contact = ({com}) => {
+ 
   const Socialicons = [
     {
       image:  <a target='_blank' href='https://www.linkedin.com/in/prashant-gatkawar-1b7237189/' ><img style={{ height: "30px" }} title="LinkedIn" src={linkedin} /> </a>,
@@ -14,11 +15,21 @@ const Contact = () => {
     } 
     
   ];
-
+  const [pos, setPos] = useState()
   
+  useEffect(()=>{
+    if(window.innerWidth <=600){
+      setPos('unset')
+    }else{
+      com  === 'project'?setPos("unset"):setPos("absolute")
+      
+    }
+  },[window.innerWidth])
+ 
+ 
   
   return (
-    <footer className={styles.footer} >
+    <footer style={{ position:pos }}  className={styles.footer} >
       <div className={styles.footerLine} ></div>
       <section className={styles.footerContainer} >
         <div>

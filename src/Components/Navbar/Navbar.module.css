@@ -1,5 +1,5 @@
 .navContainer{
-    height: 10vh;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +21,7 @@
     font-size: 23px;
     text-decoration: none;
     color:black ;
+    margin: 0;
 }
 .bar{
     display: none;
@@ -43,6 +44,9 @@
     .navContainer{
        padding: 0 28px;
     }
+    .profileImg h1{
+        font-size: 20px;
+    }
     .links{
         display: none;
     }
@@ -60,7 +64,7 @@
         text-align: center;
         position: fixed;
         top: 65px;
-        animation: myAnim 1s ease 0s 1 normal forwards;
+        animation: zoom 1s ease-in-out 0s 1 normal forwards;
     }
     .barlink div{
         margin-bottom: 20px;
@@ -68,9 +72,10 @@
     .link{
         font-size: 30px;
     }
+    
 }
 
-@keyframes myAnim {
+@keyframes zoom  {
 	0% {
 		transform: scale(0.5);
 	}
@@ -79,3 +84,4 @@
 		transform: scale(1);
 	}
 }
+

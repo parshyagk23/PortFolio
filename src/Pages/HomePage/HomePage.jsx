@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
     <Navbar/>
     <Home/>
-    <Contact positions="absolute" />
+    <Contact com={'home'} />
     </>
   )
 }
