@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Resume.module.css";
 const Education = ({ resume }) => {
-  console.log();
+ 
   const resumeKeys = Object?.keys(resume);
 
   return (
