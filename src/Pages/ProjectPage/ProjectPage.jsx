@@ -52,7 +52,7 @@ const ProjectPage = () => {
 
       ))}
       </div>
-      <Contact positions="" />
+      <Contact  />
       
      
     </>

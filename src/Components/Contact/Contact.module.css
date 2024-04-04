@@ -2,10 +2,27 @@
     display: flex;
     justify-content: space-evenly;
 }
+.footer{
+    margin:30px 0px;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
 
 .footerLine{
     width:90%;
     margin: 0 auto;
     height:1px;
     background-color:gray
+}
+@media all and (max-width:600px){
+    
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer{
+        position: relative;
+    }
 }

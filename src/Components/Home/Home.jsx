@@ -13,37 +13,37 @@ import sql from "../../assets/icons/mysql.png";
 const Home = () => {
   const Skills = [
     {
-      image: <img style={{ height: "50px" }} title="html" src={html} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="html" src={html} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="css" src={css} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="css" src={css} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="JavaScript" src={js} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="JavaScript" src={js} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="React" src={react} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="React" src={react} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="MongoDB" src={mongodb} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="MongoDB" src={mongodb} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="ExpressJs" src={express} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="ExpressJs" src={express} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="NOdeJs" src={node} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="NOdeJs" src={node} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="Java" src={Java} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="Java" src={Java} />,
     },
     {
-      image: <img style={{ height: "50px" }} title="SQL" src={sql} />,
+      image: <img style={{ height: "45px" , width:'45px' }} title="SQL" src={sql} />,
     },
   ];
   return (
     <div className={styles.container}>
       
-        <img src={ProfileImg} width="30%" height="30%" alt="Profile image" />
+        <img  className={styles.profile} src={ProfileImg}  alt="Profile image" />
      
       <div className={styles.aboutme}>
         <h1>Hello I'm Prashant </h1>
@@ -57,7 +57,14 @@ const Home = () => {
         </p>
       
         <div className={styles.skills}>
-          {Skills.map((item, index) => item.image)}
+          
+          {Skills.map((item, index) => (
+            <div key={index} >
+              {item.image}
+            </div>
+          )
+          
+          )}
         </div>
       </div>
     </div>

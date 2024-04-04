@@ -1,13 +1,13 @@
 .navContainer{
     height: 10vh;
     display: flex;
-    gap: 680px;
+    justify-content: space-between;
     align-items: center;
     padding: 0px 70px;
     background-color: #f3f3f3;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 89vw;
     
 }
 
@@ -22,6 +22,9 @@
     text-decoration: none;
     color:black ;
 }
+.bar{
+    display: none;
+}
 .links{
     display:flex;
     gap: 20px;
@@ -34,4 +37,45 @@
 }
 .link:hover{
     color: #926402;
+}
+
+@media all and (max-width:600px){
+    .navContainer{
+       padding: 0 28px;
+    }
+    .links{
+        display: none;
+    }
+    .bar{ 
+        display: block;
+        text-align: left;
+        
+    }
+    .barlink{
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        padding-top:100px ;
+        background-color: #E3E3E3;
+        text-align: center;
+        position: fixed;
+        top: 65px;
+        animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+    .barlink div{
+        margin-bottom: 20px;
+    }
+    .link{
+        font-size: 30px;
+    }
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }

@@ -1,6 +1,6 @@
 .container{
-   
-    margin: auto 100px;
+    width: 93vw;
+    margin: 0 auto;
     margin-top: 150px;
     display: flex;
     gap: 40px;
@@ -9,7 +9,10 @@
     align-items: flex-start;
     position: relative;
 }
-
+.profile{
+    width: 30%;
+    height: 30%;
+}
 
 .aboutme{
     margin-top: 20px;
@@ -30,13 +33,33 @@
 .aboutme p{
     font-size: 20px;
     font-weight: 400;
+    text-align: justify;
     color: gray;
     margin: 0 0 20px 0 ;
 
     
 }
 .skills{
-    display: flex;
+    display: grid;
+    width: 45px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     cursor: pointer;
+}
+
+@media all and (max-width:600px){
+    .container{
+        flex-direction: column;
+        position: unset;
+    }
+    .profile {
+        width: 90vw;
+       
+    }
+    .aboutme h1{
+    font-size: 10vw;
+    }
+    .skills{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
