@@ -1,26 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./Resume.module.css";
 const ResumeSkills = ({resume}) => {
-    const Skillentries =Object.entries(resume.Skill);
-    console.log(Skillentries)
     
-  return (
+    const [skill , setskill] = useState()
+    useEffect( ()=>{
+       fetchdata()
+    },[])
+ 
+    const fetchdata = async ()=>{
+      const responce = await fetch('../../../skills.json')
+      const data = await responce.json()
+      setskill(data)
+    }
+    
+    // console.log(skill)
+   
+    return (
    
     <main className={styles.RusumeContainer}>
-    <section className={styles?.resumesection}>
+    <section >
       <div style={{ width:'39vw' }}  className={styles?.resumetitle}>
-        <h1>{resume?.title}</h1>
+        <h1>Skills</h1>
       </div>
-      <div style={{ width: "61vw" }} className={styles?.resumepoints}>
-        <div >    <ul>
-            {Skillentries.map(([key, val] = entry, index)=>(
-              <li key={index} >
-              <b> {key}: </b>
-              {val}
-            </li>
+      <div style={{ width: "78vw", margin:'0 auto' }} className={styles.skillsection}>
+       
+            {skill?.map((skill,index)=>(
+              <div className={styles.skillsbox} key={index} >
+              <img  src={skill.icon} alt=""  />
+              <h2>{skill.name}</h2>
+              </div>
             ))}
-          </ul>
-        </div>
+
       </div>
     </section>
   </main>

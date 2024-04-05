@@ -55,14 +55,101 @@
     color: gray;
     margin: 0;
 }
-
+.resumepoints div{
+     width: 75vw ;
+}
 .resumepoints ul {
     margin-top: 10px;
     padding: 0;
 }
 
 .resumepoints ul li {
+    display: flex;
+    gap: 20px;
     list-style: none;
     font-size: 18px;
     margin-bottom: 10px;
+}
+.skillsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+}
+.skillsbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 120px;
+    background-color:  #f3f3f3;
+    border-radius: 20px;
+}
+.skillsbox:hover{
+  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skillsbox img{
+    width:45% ;
+    margin: 10px 0 0 0;
+    
+    
+}
+.skillsbox h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    color: black;
+}
+
+
+@media all and (max-width:1024px) {
+
+    .skillsection{
+        width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+
+}
+@media all and (max-width:820px) {
+
+    .skillsection{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    
+
+}
+@media all and (max-width:540px) {
+
+    .skillsection{
+        grid-template-columns: 1fr 1fr  ;
+        gap: 10px;
+    }
+    .resumesection {
+         flex-direction: column;
+    }
+    .resumepoints{
+        flex-direction: column;
+        width: 93vw;
+    }
+    .resumetitle{
+        width: 78vw;
+    }
+    .resumepoints p{
+        width: 39vw;
+    }
+    .resumepoints div{
+        width: 90vw ;
+   }
+   .resumediv h1
+   {
+    margin-bottom: 10px;
+   }
+   .resumetitle h1{
+    margin-top: 20px;
+   }
 }

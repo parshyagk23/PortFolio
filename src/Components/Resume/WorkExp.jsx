@@ -11,20 +11,20 @@ const WorkExp = ({ resume }) => {
         </div>
         <div className={styles?.resumepoints}>
           <p>{resume?.Duration} </p>
-          <div style={{ width: "75vw" }}>
+          <div >
             <h3>{resume?.role}</h3>
             <ul>
               <li>
                 <b>{resumeKeys[3] + ":"}</b>
-                {resume?.Organization}
+                 <span  > {resume?.Organization}</span>
               </li>
               <li>
                 <b>{resumeKeys[4] + ":"}</b>
-                {resume?.Course}
+                 <span> {resume?.Course}</span>
               </li>
               <li>
                 <b> {resumeKeys[5] + ":"}</b>
-                {resume?.Skills}
+                 <span> {resume?.Skills}</span>
               </li>
             </ul>
           </div>

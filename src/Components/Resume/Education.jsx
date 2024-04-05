@@ -12,7 +12,7 @@ const Education = ({ resume }) => {
         </div>
         <div className={styles?.resumepoints}>
           <p>{resume?.Duration} </p>
-          <div style={{ width: "75vw" }}>
+          <div >
             <h3>{resume?.role}</h3>
             <ul>
               <li>

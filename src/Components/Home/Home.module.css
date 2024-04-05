@@ -1,7 +1,7 @@
 .container{
     width: 93vw;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 110px;
     display: flex;
     gap: 40px;
     font-family: "Work Sans", sans-serif;
@@ -15,6 +15,7 @@
 }
 
 .aboutme{
+    width: 46vw;
     margin-top: 20px;
 }
 .aboutme h1{
@@ -46,6 +47,11 @@
     gap: 10px;
     cursor: pointer;
 }
+.skills div:hover{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 @media all and (max-width:600px){
     .container{
@@ -61,5 +67,8 @@
     }
     .skills{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .aboutme{
+        width: 92vw;
     }
 }

@@ -23,21 +23,7 @@ const ResumePage = () => {
       Course: "Electronics and Tele-Communication Engineering",
       CGPA: "8.87",
     },
-    {
-      title: "Skills & Expertise",
-      Skill:{
-        HTML: "Proficient in creating semantic and accessible markup structures for web pages.",
-        CSS: "Experienced in styling web pages with CSS, including layout design, responsive design.",
-        JavaScript: "Proficient in JavaScript, including DOM manipulation, asynchronous programming.",
-        ReactJs: "Strong expertise in building dynamic and interactive user interfaces using React.js.",
-        NodeJs:"Skilled in server-side development with Node.js, building scalable and efficient web applications, RESTful APIs, and integrating with databases.",
-        ExpressJs: "Proficient in creating web applications and APIs using Express.js, including middleware implementation, routing, and handling HTTP requests/responses.",
-        MongoDB: "Experienced in NoSQL database management with MongoDB, including schema design, CRUD operations.",
-        Java: "Proficient in Java programming language, including object-oriented principles, data structures, and algorithms.",
-        SQL: "Strong expertise in relational database management systems (RDBMS) and SQL, including database design, querying.",
-        GitHub:"Proficient in version control with Git and GitHub, including repository management, branching strategies, pull requests.",
-      },
-    },
+  
 
   ];
 
@@ -50,7 +36,7 @@ const ResumePage = () => {
             fontSize: "48px",
             fontWeight: "600",
             color: "black",
-            margin: "0 0 70px 0",
+            margin: "0 0 40px 0",
           }}
         >
           Resume
