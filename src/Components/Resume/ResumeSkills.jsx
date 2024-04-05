@@ -1,32 +1,42 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./Resume.module.css";
+import html from "../../assets/icons/html5.png";
+import css from "../../assets/icons/css3.png";
+import js from "../../assets/icons/js.png";
+import react from "../../assets/icons/react.png";
+import express from "../../assets/icons/express js.png";
+import node from "../../assets/icons/nodejs.png";
+import mongodb from "../../assets/icons/mongodb.png";
+import Java from "../../assets/icons/java.png";
+import sql from "../../assets/icons/mysql.png";
+import git from '../../assets/images/Social icons/github.png'
 const ResumeSkills = ({resume}) => {
     
     
     const skill =[
       {
          name: "HTML",
-          icon: "/src/assets/icons/html5.png"
+          icon: html
       },
       {
          name: "CSS",
-          icon: "/src/assets/icons/css3.png"
+          icon: css
       },
       {
          name: "JavaScript",
-          icon: "/src/assets/icons/js.png"
+          icon: js
       },
       {
          name: "ReactJS", 
-          icon: "/src/assets/icons/react.png"
+          icon: react
       },
       {
          name: "ExpressJS",
-          icon: "/src/assets/icons/express js.png"
+          icon: express
       },
       {
          name: "NodeJS",
-          icon: "/src/assets/icons/nodejs.png"
+          icon: node
       },
       
       {
@@ -36,21 +46,21 @@ const ResumeSkills = ({resume}) => {
       
       {
          name: "Java",
-          icon: "/src/assets/icons/java.png"
+          icon: Java
       },
       
       {
          name: "MongoDB",
-          icon: "/src/assets/icons/mongodb.png"
+          icon: mongodb
       },
       {
          name: "MySQL",
-          icon:  "/src/assets/icons/mysql.png"
+          icon: sql
       },
       
       {
          name: "GitHub",
-          icon: "/src/assets/images/Social icons/github.png"
+          icon: git
       }
         
   ]
