@@ -80,7 +80,7 @@
 
     .projectimg {
         width: 89vw;
-        height: 44vh;
+        height: 46vh;
         padding-left: 5px;
 
     }
@@ -90,6 +90,12 @@
         height: 42vh;
     }
 
+}
+@media all and (max-width:600px) {
+
+    .project h1 {
+        font-size: 27px;
+    }
 }
 
 @keyframes blink {
