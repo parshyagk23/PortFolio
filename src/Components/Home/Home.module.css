@@ -47,8 +47,17 @@
     gap: 10px;
     cursor: pointer;
 }
-.skills div:hover{
+.skills div{
+    width: 55px;
+    height: 55px;
+    border: 2px solid black;
     border-radius: 10px;
+
+}
+.skills div img{
+    padding: 5px;
+}
+.skills div:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 

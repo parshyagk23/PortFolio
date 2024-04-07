@@ -84,6 +84,7 @@
     height: 120px;
     background-color:  #f3f3f3;
     border-radius: 20px;
+    border: 2px solid black;
 }
 .skillsbox:hover{
   

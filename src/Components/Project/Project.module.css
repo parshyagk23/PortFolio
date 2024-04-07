@@ -9,13 +9,15 @@
     margin: 0 auto;
     font-family: "Work Sans", sans-serif;
     margin-bottom: 20px;
+   
 }
 
 .project h1 {
     font-size: 35px;
     font-weight: 600;
     color: rgba(0, 0, 0);
-    margin: 0 0 20px 0;
+    margin: 0;
+   
 }
 
 .project {
@@ -38,12 +40,33 @@
 }
 
 .projectimg img {
-    border-radius: 30px;
+    border-radius: 20px;
     padding-top: 15px;
-    width: 45vw;
+    width: 40vw;
     height: 45vh;
 }
+.link{
+    text-decoration: none;
+    height: 35px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding:  0 5px;
+    font-size:20px;
+    background-color: red;
+    animation: blink 3s ease-in-out 0s infinite normal none;
+}
+.link span{
+    font-size: 20px;
+}
+.link b{
+    padding-bottom: 12px;
+}
 .projectimg:hover{
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
@@ -67,4 +90,17 @@
         height: 42vh;
     }
 
+}
+
+@keyframes blink {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
 }
