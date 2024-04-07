@@ -5,6 +5,7 @@ import styles from "../../Components/Resume/Resume.module.css";
 import WorkExp from "../../Components/Resume/WorkExp";
 import ResumeSkills from '../../Components/Resume/ResumeSkills';
 import Footer from '../../Components/Contact/Contact'
+import ScrollAnimation from 'react-animate-on-scroll';
 const ResumePage = () => {
   const resumeDetails = [
     {

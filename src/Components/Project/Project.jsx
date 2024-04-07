@@ -1,8 +1,11 @@
 import React from "react";
+
 import styles from "./Project.module.css";
 
 const Project = ({ project }) => {
+
   return (
+
     <div className={styles.projectcontainer}>
       <section className={styles.project}>
         <div className={styles.description}>
@@ -21,7 +24,9 @@ const Project = ({ project }) => {
         </div>
       </section>
     </div>
+    
   );
 };
+
 
 export default Project;

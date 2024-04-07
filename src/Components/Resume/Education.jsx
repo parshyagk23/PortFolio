@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Resume.module.css";
+
 const Education = ({ resume }) => {
  
   const resumeKeys = Object?.keys(resume);
 
-  return (
+  return ( 
+   
     <main className={styles.RusumeContainer}>
       <section className={styles?.resumesection}>
         <div className={styles?.resumetitle}>
@@ -30,6 +32,7 @@ const Education = ({ resume }) => {
 
       <div className={styles.line}></div>
     </main>
+   
   );
 };
 

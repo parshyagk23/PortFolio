@@ -64,6 +64,7 @@ const ProjectPage = () => {
         </h1>
         {projectDetails.map((project, index) => (
           <div key={index}>
+            
             <Project project={project} index={index} />
           </div>
         ))}

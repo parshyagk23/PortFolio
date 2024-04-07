@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     width: 89vw;
+    z-index: 1;
     
 }
 
