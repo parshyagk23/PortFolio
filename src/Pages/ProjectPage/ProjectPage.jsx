@@ -46,6 +46,7 @@ const ProjectPage = () => {
       Link: "https://parshyagk23.github.io/Calculator/",
     },
   ];
+
   return (
     <>
       <Navbar />
