@@ -75,7 +75,7 @@
     font-size: 10vw;
     }
     .skills{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .aboutme{
         width: 92vw;
