@@ -1,11 +1,6 @@
 import React from "react";
 import Project from "../../Components/Project/Project";
 import Navbar from "../../Components/Navbar/Navbar";
-import jobfinderImg from "../../assets/images/Project images/jobfinder.png";
-import pocketNoteImg from "../../assets/images/Project images/pocketNotes.png";
-import supperAppImg from "../../assets/images/Project images/supperapp.png";
-import RockPaperScissor from "../../assets/images/Project images/rockpaperscissors.png";
-import Calculator from "../../assets/images/Project images/calculator.png";
 import Contact from "../../Components/Contact/Contact";
 import styles from "../../Components/Project/Project.module.css";
 const ProjectPage = () => {
