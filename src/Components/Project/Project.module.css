@@ -33,18 +33,7 @@
     margin: 0 0 20px 0;
 }
 
-.projectimg {
-    width: 55vw;
-    height: 50vh;
-    border-radius: 30px;
-}
 
-.projectimg img {
-    border-radius: 20px;
-    padding-top: 15px;
-    width: 40vw;
-    height: 45vh;
-}
 .link{
     text-decoration: none;
     height: 35px;

@@ -19,9 +19,7 @@ const Project = ({ project }) => {
           </div>
           <p>{project.description}</p>
         </div>
-        <div className={styles.projectimg}>
-          <img src={project.img} alt="" />
-        </div>
+       
       </section>
     </div>
     
